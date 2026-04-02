@@ -1,18 +1,32 @@
 body {
     margin: 0;
     display: grid;
-    grid-template: 1fr 3fr / 1fr 3fr;
+    grid-template: 1fr 3fr / .5fr 3fr;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .sidebar{
+    padding-left: 15px;
+    padding-top: 10px;
     background-color: rgb(37, 76, 161);
     grid-row: 1 / 3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 50px;
+    font-weight: bold;
 
 }
 
 .sidebar .Dashboard img{
     height: 50px;
     width: 50px;
+}
+
+.Dashboard{
+    align-items: center;
+
 }
 
 .sidebar img{
@@ -23,6 +37,15 @@ body {
 
 .sidebar div{
     display: flex;
+    gap: 8px;
+    color: white;
+}
+
+.buttonsOne, .buttonsTwo{
+    flex-direction: column
+}
+
+.buttonsOne div, .buttonsTwo div{
     align-items: center;
 }
 
@@ -31,5 +54,6 @@ body {
 }
 
 .mainbar{
+    background-color: lightgray;
 
 }
