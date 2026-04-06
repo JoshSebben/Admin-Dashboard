@@ -5,6 +5,8 @@ body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+/* ------------------------------------------- */
+
 .sidebar{
     padding-left: 15px;
     padding-top: 10px;
@@ -49,10 +51,85 @@ body {
     align-items: center;
 }
 
+/* ------------------------------------------- */
+
 .topbar{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
 
 }
 
+.topbar img{
+    height: 25px;
+    width: 25px;
+    
+}
+
+.topbar .profilePicture{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.tophalf{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.left{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.right{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.bar{
+    height: 25px;
+    width: 900px;
+    border-radius: 10px;
+    background-color: lightgrey;
+}
+
+.name{
+    font-weight: bold;
+    font-size: large;
+}
+
+.bottomHalf{
+    display: flex;
+}
+
+.leftHalf{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.leftHalf .profilePicture{
+    height: 60px;
+    width: 60px;
+}
+.rightHalf button{
+    border-style: none;
+    font-weight: bold;
+    color: white;
+    border-radius: 20px;
+    background-color: rgb(62, 62, 226);
+    height: 30px;
+    width: 70px;
+
+}
 .mainbar{
     background-color: lightgray;
 
